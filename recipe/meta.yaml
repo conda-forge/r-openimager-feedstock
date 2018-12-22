@@ -39,6 +39,7 @@ requirements:
     - r-png
     - r-shiny
     - r-tiff
+    - llvm-openmp      # [osx]
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
@@ -49,6 +50,7 @@ requirements:
     - r-png
     - r-shiny
     - r-tiff
+    - llvm-openmp      # [osx]
 
 test:
   commands:
