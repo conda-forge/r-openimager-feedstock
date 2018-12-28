@@ -15,15 +15,16 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 1000
+  skip: True  # [win and vc<14]
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('cxx') }}      # [not win]
-    - {{ compiler('fortran') }}      # [not win]
+    - {{ compiler('c') }}        # [linux or osx and c_compiler == "toolchain_c"]
+    - {{ compiler('cxx') }}      # [linux or osx and c_compiler == "toolchain_c"]
+    - {{ compiler('fortran') }}  # [linux or osx and c_compiler == "toolchain_c"]
     - {{native}}toolchain        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
@@ -39,10 +40,11 @@ requirements:
     - r-png
     - r-shiny
     - r-tiff
-    - llvm-openmp      # [osx]
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
+    - libcxx                     # [osx and c_compiler == "clang"]
+    - llvm-openmp                # [osx and c_compiler == "clang"]
     - r-r6
     - r-rcpp >=0.12.17
     - r-rcpparmadillo >=0.8.0
@@ -50,7 +52,6 @@ requirements:
     - r-png
     - r-shiny
     - r-tiff
-    - llvm-openmp      # [osx]
 
 test:
   commands:
