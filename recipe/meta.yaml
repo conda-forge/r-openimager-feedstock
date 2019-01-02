@@ -43,7 +43,6 @@ requirements:
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
-    - libcxx                     # [osx and c_compiler == "clang"]
     - llvm-openmp                # [osx and c_compiler == "clang"]
     - r-r6
     - r-rcpp >=0.12.17
