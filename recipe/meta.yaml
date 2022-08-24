@@ -1,4 +1,4 @@
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OpenImageR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OpenImageR/OpenImageR_{{ version }}.tar.gz
-  sha256: eaad6d6e5b567facb2b87f8a327cb18baba95ef0acee5f48770433056be74872
+  sha256: 4768adbbc29ecf649a3c78a9c5027d6094979f6871e508dc0d8bea76a81c9546
 
 build:
   merge_build_host: true  # [win]
