@@ -1,4 +1,4 @@
-{% set version = "1.2.7" %}
+{% set version = "1.2.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OpenImageR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OpenImageR/OpenImageR_{{ version }}.tar.gz
-  sha256: 902a80a35c11036d75014bc9b6caea328d57f3d8d929cd705b0b622a7c2dd317
+  sha256: d659c3623d08133925ed41d41185feb530c6c224d70cb0e9106ee438deaddcd8
 
 build:
   merge_build_host: true  # [win]
@@ -31,12 +31,14 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-r6
     - r-rcpp >=0.12.17
     - r-rcpparmadillo >=0.8.0
     - r-jpeg
+    - r-lifecycle
     - r-png
     - r-shiny
     - r-tiff
@@ -47,6 +49,7 @@ requirements:
     - r-rcpp >=0.12.17
     - r-rcpparmadillo >=0.8.0
     - r-jpeg
+    - r-lifecycle
     - r-png
     - r-shiny
     - r-tiff
