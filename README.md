@@ -1,11 +1,22 @@
+About r-openimager-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openimager-feedstock/blob/main/LICENSE.txt)
+
 About r-openimager
-==================
+------------------
 
 Home: https://github.com/mlampros/OpenImageR
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-openimager-feedstock/blob/main/LICENSE.txt)
+Summary: Incorporates functions for image preprocessing, filtering and image recognition. The package takes advantage of 'RcppArmadillo' to speed up computationally intensive functions. The histogram of oriented gradients descriptor is a modification of the 'findHOGFeatures' function of the 'SimpleCV' computer vision platform, the average_hash(), dhash() and phash() functions are based on the 'ImageHash' python library. The Gabor Feature Extraction functions are based on 'Matlab' code of the paper, "CloudID: Trustworthy cloud-based and cross-enterprise biometric identification" by M. Haghighat, S. Zonouz, M. Abdel-Mottaleb, Expert Systems with Applications, vol. 42, no. 21, pp. 7905-7916, 2015, <doi:10.1016/j.eswa.2015.06.025>. The 'SLIC' and 'SLICO' superpixel algorithms were explained in detail in (i) "SLIC Superpixels Compared to State-of-the-art Superpixel Methods", Radhakrishna Achanta, Appu Shaji, Kevin Smith, Aurelien Lucchi, Pascal Fua, and Sabine Suesstrunk, IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 34, num. 11, p. 2274-2282, May 2012, <doi:10.1109/TPAMI.2012.120> and (ii) "SLIC Superpixels", Radhakrishna Achanta, Appu Shaji, Kevin Smith, Aurelien Lucchi, Pascal Fua, and Sabine Suesstrunk, EPFL Technical Report no. 149300, June 2010.
+About r-openimager
+------------------
+
+Home: https://github.com/mlampros/OpenImageR
+
+Package license: GPL-3.0-only
 
 Summary: Incorporates functions for image preprocessing, filtering and image recognition. The package takes advantage of 'RcppArmadillo' to speed up computationally intensive functions. The histogram of oriented gradients descriptor is a modification of the 'findHOGFeatures' function of the 'SimpleCV' computer vision platform, the average_hash(), dhash() and phash() functions are based on the 'ImageHash' python library. The Gabor Feature Extraction functions are based on 'Matlab' code of the paper, "CloudID: Trustworthy cloud-based and cross-enterprise biometric identification" by M. Haghighat, S. Zonouz, M. Abdel-Mottaleb, Expert Systems with Applications, vol. 42, no. 21, pp. 7905-7916, 2015, <doi:10.1016/j.eswa.2015.06.025>. The 'SLIC' and 'SLICO' superpixel algorithms were explained in detail in (i) "SLIC Superpixels Compared to State-of-the-art Superpixel Methods", Radhakrishna Achanta, Appu Shaji, Kevin Smith, Aurelien Lucchi, Pascal Fua, and Sabine Suesstrunk, IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 34, num. 11, p. 2274-2282, May 2012, <doi:10.1109/TPAMI.2012.120> and (ii) "SLIC Superpixels", Radhakrishna Achanta, Appu Shaji, Kevin Smith, Aurelien Lucchi, Pascal Fua, and Sabine Suesstrunk, EPFL Technical Report no. 149300, June 2010.
 
